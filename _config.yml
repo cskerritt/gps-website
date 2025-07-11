@@ -1,8 +1,8 @@
 # Jekyll configuration for GitHub Pages
 title: Greylock Placement Services LLC
 description: Professional disability placement and navigation services
-url: "https://yourusername.github.io" # Replace with your GitHub username
-baseurl: "/gps-website" # Replace with your repository name
+url: "https://cskerritt.github.io"
+baseurl: "/gps-website"
 
 # SEO and Social
 author: Greylock Placement Services LLC
