@@ -1,0 +1,48 @@
+# Jekyll configuration for GitHub Pages
+title: Greylock Placement Services LLC
+description: Professional disability placement and navigation services
+url: "https://yourusername.github.io" # Replace with your GitHub username
+baseurl: "/gps-website" # Replace with your repository name
+
+# SEO and Social
+author: Greylock Placement Services LLC
+twitter:
+  username: 
+  card: summary_large_image
+social:
+  name: Greylock Placement Services LLC
+  links:
+    - https://www.g-p-s.org/
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: "/assets/images/default-og-image.jpg"
