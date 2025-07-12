@@ -1,27 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://www.g-p-s.org/</loc>
-        <lastmod>2024-01-01</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://cskerritt.github.io/gps-website/</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.g-p-s.org/#services</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://cskerritt.github.io/gps-website/services/vocational-evaluation</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/services/earning-capacity</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/services/expert-witness</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/services/labor-market-survey</loc>
+        <lastmod>2025-01-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.g-p-s.org/#about</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://cskerritt.github.io/gps-website/about</loc>
+        <lastmod>2025-01-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.g-p-s.org/#contact</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://cskerritt.github.io/gps-website/contact</loc>
+        <lastmod>2025-01-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/faq</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/testimonials</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/process</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cskerritt.github.io/gps-website/credentials</loc>
+        <lastmod>2025-01-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>

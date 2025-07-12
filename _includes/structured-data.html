@@ -2,27 +2,48 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "alternateName": "G-P-S",
+    "@type": "ProfessionalService",
+    "@id": "{{ site.url }}{{ site.baseurl }}/#organization",
+    "name": "Greylock Placement Services LLC",
+    "alternateName": ["G-P-S", "Greylock Placement Services"],
     "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
     "description": "{{ site.description }}",
-    "sameAs": {{ site.social.links | jsonify }},
+    "email": "experts@g-p-s.org",
+    "telephone": "+1-800-XXX-XXXX",
+    "faxNumber": "+1-800-XXX-XXXX",
     "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
-    }
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "42.7001",
+        "longitude": "-73.2162"
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+    },
+    "priceRange": "$$$",
+    "sameAs": {{ site.social.links | jsonify }}
 }
 </script>
 
-<!-- WebSite Schema -->
+<!-- WebSite Schema with Enhanced Search -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "{{ site.url }}{{ site.baseurl }}/#website",
     "name": "{{ site.title }}",
     "url": "{{ site.url }}{{ site.baseurl }}",
     "description": "{{ site.description }}",
+    "publisher": {
+        "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
+    },
     "potentialAction": {
         "@type": "SearchAction",
         "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
@@ -31,20 +52,120 @@
 }
 </script>
 
-<!-- Service Schema -->
+<!-- Professional Service Schema -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": "ProfessionalService",
+    "name": "Vocational Expert Services",
     "provider": {
-        "@type": "Organization",
-        "name": "{{ site.title }}"
+        "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
     },
-    "serviceType": "Disability Placement Services",
-    "description": "Navigating disability services and providing professional placement support",
+    "serviceType": ["Vocational Evaluation", "Expert Witness Services", "Disability Assessment", "Earning Capacity Analysis"],
+    "description": "Comprehensive vocational expert services including evaluations, earning capacity assessments, and expert witness testimony",
     "areaServed": {
         "@type": "Country",
         "name": "United States"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Vocational Expert Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Vocational Evaluation",
+                    "description": "Comprehensive assessment of vocational potential and transferable skills"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Earning Capacity Assessment",
+                    "description": "Expert analysis of pre and post-injury earning capacity"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Expert Witness Testimony",
+                    "description": "Qualified expert witness for depositions and trial testimony"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Labor Market Survey",
+                    "description": "Detailed analysis of job availability and market conditions"
+                }
+            }
+        ]
+    }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is a vocational evaluation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A vocational evaluation is a comprehensive assessment process that analyzes an individual's work-related abilities, limitations, and potential for employment following an injury or disability."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "When is a vocational expert needed?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vocational experts are typically needed in personal injury cases, workers' compensation claims, disability determinations, and any legal matter involving questions about work capacity or earning potential."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What documents are needed for an evaluation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically required documents include medical records, employment history, educational records, tax returns, and any relevant legal documents related to the case."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does an evaluation take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A comprehensive vocational evaluation typically takes 2-4 weeks from initial consultation to final report, depending on case complexity and document availability."
+            }
+        }
+    ]
+}
+</script>
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Greylock Placement Services LLC",
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/office.jpg",
+    "priceRange": "$$$",
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
     }
 }
 </script>

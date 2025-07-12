@@ -1,30 +1,44 @@
 # Robots.txt for Greylock Placement Services LLC
+# Professional Vocational Expert Services
 # https://www.g-p-s.org/
 
+# Default rule for all bots
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /.git/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_site/
+Disallow: /node_modules/
+Disallow: *.json$
+Disallow: *.yml$
+Disallow: *.yaml$
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
 
 # Sitemap location
-Sitemap: https://www.g-p-s.org/sitemap.xml
+Sitemap: https://cskerritt.github.io/gps-website/sitemap.xml
 
-# Crawl-delay for responsible crawling
-Crawl-delay: 1
-
-# Allow major search engines
+# Priority search engines - no crawl delay
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 1
 
+# Social media bots
 User-agent: facebookexternalhit
 Allow: /
 
@@ -34,7 +48,29 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Block bad bots
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Block aggressive/unwanted bots
 User-agent: AhrefsBot
 Disallow: /
 
@@ -45,4 +81,7 @@ User-agent: DotBot
 Disallow: /
 
 User-agent: MJ12bot
+Disallow: /
+
+User-agent: Bytespider
 Disallow: /
